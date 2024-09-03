@@ -4,7 +4,7 @@ const inputImagePath = "Images/input/CITYVIEW_02_261.jpg";
 const outputImagePath = "Images/output/New_CITYVIEW_02_261.jpg";
 
 const backgroundColor = "#D7A9B8";
-const outputWidth = 1920;
+const outputWidth = 1080;
 const outputHeight = 1080;
 const borderRadius = 30;
 const shadowOffset = 10;
@@ -36,9 +36,6 @@ async function generateImage() {
       .composite([
         {
           input: processedImage,
-          // no need to use top left way
-          // top: (outputHeight - 800) / 2,
-          // left: (outputWidth - 800) / 2,
           gravity: "center",
           blend: "over",
         },
